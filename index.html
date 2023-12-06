@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href=" ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My OTT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+          background-color: black;
+        }
+        nav{
+            height: 180px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+           z-index: 100; 
+          
+  
+        }
+        .nav-logo img{
+            height: 250px;
+            width: 150px;
+            margin: 12px 0px 7px 5px;
+        }
+        
+        
+        nav .nav-items{
+            position: absolute;
+            right: 20px;
+           
+
+        }
+        
+        .nav-items a{
+            text-decoration: none;
+            font-size:30px ;
+            padding: 15px 5px;
+            color: whitesmoke ;
+        }
+        .nav-items:hover a{
+            filter: blur(2px);
+        }
+        .nav-items a:hover{
+            color: skyblue;
+            filter: blur(1px);
+        }
+        .carousel-inner .carousel-item img{
+          height: 750px;
+          width: 95%;
+       }
+       .carousel-inner{
+        margin: 180px 0px 0px 70px;
+       }
+       h2{
+        color: gray;
+        display: inline;
+       }
+       h2:hover{
+        color: white;
+       }
+       .frequent-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .frequent-img  img{
+        height: 400px;
+        width: 14%;
+        margin: 5px;
+        border-radius: 10px;
+       }
+       .frequent-img:hover a{
+        filter: blur(2px);
+       }
+       .frequent-img img:hover{
+        transform: translate(-20px);
+        transform: scale(1.2);
+        filter: drop-shadow(10px);
+        transition: all .5s ease-in-out;
+        border-radius: 10px;
+       }
+       #carouselExampleIndicators{
+        margin: 80px;
+       }
+       #freq{
+        margin: 80px;
+       }
+       .recent-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .recent-img  img{
+        height: 400px;
+        width: 14%;
+        margin: 5px;
+        border-radius: 10px;
+       }
+       .recent-img img:hover{
+        transform: translate(-20px);
+        transform: scale(1.2);
+        filter: drop-shadow(10px);
+        transition: all .5s ease-in-out;
+        border-radius: 10px;
+       }
+       #rec{
+        margin: 80px;
+       }
+       .top-rated {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .top-rated  img{
+        height: 400px;
+        width: 14%;
+        margin: 5px;
+        border-radius: 10px;
+       }
+       .top-rated  img:hover{
+        transform: translate(-20px);
+        transform: scale(1.2);
+        filter: drop-shadow(10px);
+        transition: all .5s ease-in-out;
+        border-radius: 10px;
+       }
+       #rated{
+        margin: 50px;
+       }
+       .fav-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .fav-img img{
+        height: 400px;
+        width: 14%;
+        margin: 10px;
+        border-radius: 10px;
+       }
+       .fav-img img:hover{
+        transform: translate(-20px);
+        transform: scale(1.2);
+        filter: drop-shadow(10px);
+        transition: all .5s ease-in-out;
+        border-radius: 10px;
+       }
+       #fav{
+        margin: 80px;
+       }
+
+
+ 
+
+
+    </style>
+</head>
+<body>
+    <nav class="navfix">
+        <div class="nav-logo"></div>
+        <img src="aha logo.jpg" alt="">
+        
+    </div>
+
+    <div class="nav-items">
+        <a href="">Home</a>
+        <a href="#freq">Frequently Watched</a>
+        <a href="#rec">Recently Released</a>
+        <a href="#rated">Top Rated</a>
+        <a href="#fav">Favourites</a>
+        <a href="">About</a>
+        <a href="login.html" target="_blank">Signup/signin</a>
+    </div>
+    </nav>
+    <!-- Home start -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="bhemmala.jpg" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Atd.jpg" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="jalsa.jpg" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="badhri.jpg" class="d-block " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- Home end -->
+    <!-- Frequent section start -->
+     <div class="frequent" id="freq"></div>
+    <h2>Frequently Watched</h2>
+    <div class="frequent-img">
+    <img src="f1.jpg" alt="">
+    <img src="f2.jpg" alt="">
+    <img src="f3.jpg" alt="">
+    <img src="f4.jpg" alt="">
+    <img src="f5.jpg" alt="">
+    <img src="f6.jpg" alt=""> <br>
+    <img src="f7.jpg" alt="">
+    <img src="f8.jpg" alt="">
+    <img src="f9.jpg" alt="">
+    <img src="f10.jpg" alt="">
+    <img src="f11.jpg" alt="">
+    <img src="f12.jpg" alt="">
+    </div> 
+    <!-- Frequent sectivon end -->
+    <!-- Recent section start -->
+    <div class="recent" id="rec"></div>
+    <h2>Recently Released</h2>
+    <div class="recent-img">
+    <img src="r1.jpg" alt="">
+    <img src="r2.jpg" alt="">
+    <img src="r3.jpg" alt="">
+    <img src="r4.jpg" alt="">
+    <img src="r5.jpg" alt="">
+    <img src="r6.jpg" alt=""><br><br><br>
+    <img src="r7.jpg" alt="">
+    <img src="r8.jpg" alt="">
+    <img src="r9.jpg" alt="">
+    <img src="r10.jpg" alt="">
+    <img src="r11.jpg" alt="">
+    <img src="r12.jpg" alt="">
+    </div>
+    <!-- Recent section end -->
+    <!-- Toprated Section Starts -->
+    <div class="top-rated" id="rated"></div>
+    <h2>Top Rated</h2>
+    <div class="top-rated">
+      <img src="f1.jpg" alt="">
+      <img src="r9.jpg" alt="">
+      <img src="r6.jpg" alt="">
+      <img src="f2.jpg" alt="">
+      <img src="r2.jpg" alt="">
+      <img src="r10.jpg" alt="">
+      <img src="r7.jpg" alt="">
+      <img src="f9.jpg" alt="">
+      <img src="f11.jpg" alt="">
+      <img src="f12.jpg" alt="">
+      <img src="f6.jpg" alt="">
+      <img src="f7.jpg" alt="">
+    </div>
+    <!-- Toprated Section end -->
+    <!--Favourite Section start -->
+    <div class="favourite" id="fav"></div>
+    <h2>Favourites</h2>
+    <div class="fav-img">
+      <img src="f5.jpg" alt="">
+      <img src="f6.jpg" alt="">
+      <img src="r6.jpg" alt="">
+      <img src="r7.jpg" alt="">
+      <img src="f9.jpg" alt="">
+      <img src="f10.jpg" alt="">
+      <img src="r8.jpg" alt="">
+      <img src="r12.jpg" alt="">
+      <img src="r10.jpg" alt="">
+      <img src="f1.jpg" alt="">
+      <img src="f2.jpg" alt="">
+      <img src="f4.jpg" alt="">
+
+    </div>
+
+    <!--Favourite Section end -->
+    
+</body>
+</html>
